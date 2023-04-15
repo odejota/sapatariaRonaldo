@@ -1,0 +1,18 @@
+.menuNav {
+    width: 80%;
+    margin: auto;
+}
+
+.menuNav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menuNav li {
+    padding: 20px;
+}
+
+.menuNav a {
+    text-decoration: none;
+}
