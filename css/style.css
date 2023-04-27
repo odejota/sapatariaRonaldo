@@ -1,12 +1,20 @@
+body {
+    margin: 0;
+}
+
 .menuNav {
-    width: 80%;
     margin: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuNav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    align-content: center;
 }
 
 .menuNav li {
@@ -15,4 +23,8 @@
 
 .menuNav a {
     text-decoration: none;
+}
+
+header img {
+    width: 100vw;
 }
