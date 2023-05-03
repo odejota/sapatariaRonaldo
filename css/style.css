@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    box-shadow: 0 4px 5px 0 rgb(0, 0, 0);
 }
 
 .menuNav ul {
@@ -23,8 +25,45 @@ body {
 
 .menuNav a {
     text-decoration: none;
+    color: white;
+}
+
+.menuNav a:hover {
+    color: rgb(128, 68, 0);
 }
 
 header img {
     width: 100vw;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0px 60%;
+}
+
+.containerMain {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.artImg {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 4px;
+}
+
+.artImg:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.514);
+}
+
+.artSapato {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.artCinto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
