@@ -1,15 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Bodoni Moda', serif;
+font-family: 'Poppins', sans-serif; */
+
 body {
     margin: 0;
+    background-color: #F2F2F2;
+    font-family: 'Poppins', sans-serif;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bodoni Moda', serif;
+}
+
+#hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-color: #A67E76;
+    border-style: solid;
 }
 
 .menuNav {
     margin: auto;
-    height: 5vh;
+    height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: black;
-    box-shadow: 0 4px 5px 0 rgb(0, 0, 0);
+    background-color: #0D0D0D;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.322);
+}
+
+.menuNav img {
+    width: 50px;
 }
 
 .menuNav ul {
@@ -29,14 +50,15 @@ body {
 }
 
 .menuNav a:hover {
-    color: rgb(128, 68, 0);
+    color: #A67E76;
 }
 
-header img {
+header #headerImg {
     width: 100%;
     height: 350px;
     object-fit: cover;
     object-position: 0px 60%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.219);
 }
 
 .containerMain {
@@ -45,8 +67,8 @@ header img {
 }
 
 .artImg {
-    width: 17vw;
-    height: 17vw;
+    width: 17vh;
+    height: 17vh;
     border-radius: 4px;
 }
 
@@ -75,28 +97,93 @@ header img {
     flex-wrap: wrap;
 }
 
+#prazos table {
+    display: flex;
+    justify-content: center;
+}
+
+table th, td {
+    border-bottom: 1px solid #A67E76;
+    padding-right: 10vw;
+}
+
 .footer {
     background-color: black;
     color: white;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 70px;
+    margin-bottom: 0;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.subFooter {
+    margin: auto;
+    /* margin-bottom: 0; */
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.footerIcons {
-    display: flex;
+.subFooter #footerLogo {
+    width: 100px;
+    margin-right: 20px;
 }
 
-.footerIcons ul {
+.formasDePag {
+    margin-right: 20px;
+}
+
+.formasDePag p {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.formasDePag ul {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
     list-style: none;
+    align-content: center;
+    /* margin-left: 0; */
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
 
-.footerIcons ul li img {
-    width: 20px;
+.formasDePag ul li {
+    padding: 10px;
 }
+
+.formasDePag ul li i, img {
+    width: 17px;
+}
+
+.redesSociais p {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.redesSociais ul {
+    display: flex;
+    list-style: none;
+    /* margin-left: 0; */
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.redesSociais ul li {
+    padding: 10px;
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* #copyright p {
+    text-decoration: overline;
+    text-decoration-line: overline;
+} */
