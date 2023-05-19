@@ -2,9 +2,19 @@
 /* font-family: 'Bodoni Moda', serif;
 font-family: 'Poppins', sans-serif; */
 
+/* -------------- Geral -------------- */
+
+:root {
+    --cor-principal: #A67E76;
+    --cor-principal-2: #734434;
+    --cor-principal-3: #593027;
+    --cor-secundaria: #F2F2F2;
+    --cor-terciaria: #0D0D0D;
+}
+
 body {
     margin: 0;
-    background-color: #F2F2F2;
+    background-color: var(--cor-secundaria);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,7 +25,7 @@ body h1, h2, h3, h4, h5, h6 {
 #hr {
     margin-top: 40px;
     margin-bottom: 40px;
-    border-color: #A67E76;
+    border-color: var(--cor-principal);
     border-style: solid;
 }
 
@@ -25,7 +35,7 @@ body h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0D0D0D;
+    background-color: var(--cor-terciaria);
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.322);
 }
 
@@ -50,7 +60,7 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 .menuNav a:hover {
-    color: #A67E76;
+    color: var(--cor-principal);
 }
 
 header #headerImg {
@@ -66,13 +76,103 @@ header #headerImg {
     margin-right: 15vw;
 }
 
+.footer {
+    background-color: var(--cor-terciaria);
+    color: white;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 0;
+    box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.219);
+}
+
+.subFooter {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subFooter #footerLogo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.formasDePag {
+    margin-right: 20px;
+}
+
+.formasDePag p {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.formasDePag ul {
+    display: flex;
+    list-style: none;
+    align-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.formasDePag ul li {
+    padding: 10px;
+}
+
+.formasDePag img {
+    width: 17px;
+}
+
+.redesSociais p {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.redesSociais ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.redesSociais ul li {
+    padding: 10px;
+}
+
+.redesSociais ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.redesSociais ul li a:hover {
+    color: var(--cor-principal);
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#copyright hr {
+    width: 300px;
+    border-color: var(--cor-secundaria);
+}
+
+/* -------------- Página Index -------------- */
+
 .artImg {
-    width: 17vh;
-    height: 17vh;
+    width: 30vh;
+    height: 30vh;
+    margin: 1vh;
     border-radius: 4px;
 }
 
 .artImg:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.514);
 }
 
@@ -103,87 +203,38 @@ header #headerImg {
 }
 
 table th, td {
-    border-bottom: 1px solid #A67E76;
+    border-bottom: 1px solid var(--cor-principal);
     padding-right: 10vw;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    margin: auto;
-    margin-top: 70px;
-    margin-bottom: 0;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
+/* -------------- Página Sobre Nós -------------- */
+
+header #headerImgSobre {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0px 85%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.219);
 }
 
-.subFooter {
-    margin: auto;
-    /* margin-bottom: 0; */
+#ronaldo {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-.subFooter #footerLogo {
-    width: 100px;
-    margin-right: 20px;
+#ronaldo img {
+    width: 50vw;
+    border-radius: 4px;
 }
 
-.formasDePag {
-    margin-right: 20px;
-}
+@media screen and (max-width: 992px) {
+    header #headerImgSobre {
+        object-position: 60%;
+    }
 
-.formasDePag p {
-    margin-bottom: 0;
-    margin-left: 8px;
+    #ronaldo img {
+        width: 100%;
+        border-radius: 4px;
+    }
 }
-
-.formasDePag ul {
-    display: flex;
-    list-style: none;
-    align-content: center;
-    /* margin-left: 0; */
-    padding-left: 0;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.formasDePag ul li {
-    padding: 10px;
-}
-
-.formasDePag ul li i, img {
-    width: 17px;
-}
-
-.redesSociais p {
-    margin-bottom: 0;
-    margin-left: 8px;
-}
-
-.redesSociais ul {
-    display: flex;
-    list-style: none;
-    /* margin-left: 0; */
-    padding-left: 0;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.redesSociais ul li {
-    padding: 10px;
-}
-
-#copyright {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* #copyright p {
-    text-decoration: overline;
-    text-decoration-line: overline;
-} */
